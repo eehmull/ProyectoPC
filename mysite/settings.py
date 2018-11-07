@@ -25,7 +25,7 @@ SECRET_KEY = 'd#q1*@^248mo4z(-ch+09y4y8%p(*tr7_l&h3cd317=&$0r4#$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1',]
+ALLOWED_HOSTS = ['podcast.pythonanywhere.com','127.0.0.1',]
 
 # Application definition
 
