@@ -6,8 +6,11 @@
     <div class="row align-items-center">
     <div class="ol-lg-6 order-lg-1">
       <div class="p-5">
-
-
+        {% if user.is_authenticated %}
+        <a  href="{% url 'editar' pk=pod.pk %}" class="btn btn-default btn-xl rounded-pill mt-5">editar podcast<i class="fas fa-plus"></i></a>
+        <a  href="{% url 'remover' pk=pod.pk %}" class="btn btn-secondary btn-xl rounded-pill mt-5">Remover<i class="fas fa-plus"></i></a>
+      
+        {% endif %}
         <h1 class="display-4">{{ pod.nombre }}</h1>
         <h2>{{ pod.descripcion|linebreaksbr }}</h2>
         <h3><a href="">{{ pod.enlace }}</a></h3>

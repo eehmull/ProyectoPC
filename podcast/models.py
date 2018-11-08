@@ -28,7 +28,7 @@ class Podcasting(models.Model):
     podcaster   = models.ManyToManyField(Podcaster, through='Podcast')
 
     def publicar(self):
-        self.fecha_publicacion = timezone.now()
+        #self.fecha_publicacion = timezone.now()
         self.save()
 
 
